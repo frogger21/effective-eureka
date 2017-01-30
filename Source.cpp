@@ -254,7 +254,7 @@ MAIN
 int main()
 {
 	string fileNom;
-	fileNom = "D:/coursera/stanford data struc and algos/4/dfs1.txt"; //file path and file name
+	fileNom = "D:/dfs1.txt"; //file path and file name
 	Graph X;
 	X.undirected = false; //the graph will be directed
 	X.Nvertices = 0;
