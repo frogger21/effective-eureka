@@ -261,7 +261,7 @@ bool virgin(Graph &G, int v)
 	return false; //the code never reach here though...
 }
 
-//DFS2 topological sort
+//DFS
 void DFS(Graph &G, int s, bool printC)
 {
 	//we are given vertex s that we will mark as explored
@@ -285,7 +285,7 @@ void DFS(Graph &G, int s, bool printC)
 	}
 }
 
-//DFS Depth First Search algorithm is recursive 
+//DFS topological sort
 void DFS2(Graph &G, int s, list<fs> &F, int* label)
 {
 	//we are given vertex s that we will mark as explored
@@ -318,7 +318,7 @@ void DFS2(Graph &G, int s, list<fs> &F, int* label)
 }
 
 
-//Topological Sort via DFS
+//Topological Sort via DFS2
 void TopologicalSort(Graph &G)
 {
 	//given fresh graph with vertices all unexplored
@@ -356,7 +356,7 @@ MAIN
 int main()
 {
 	string fileNom;
-	fileNom = "D:/coursera/stanford data struc and algos/4/dfs2.txt"; //file path and file name
+	fileNom = "D:/dfs2.txt"; //file path and file name
 	Graph X, Y;
 	X.undirected = false; //the graph will be directed
 	X.Nvertices = 0;
