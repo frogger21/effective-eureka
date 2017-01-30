@@ -288,8 +288,6 @@ void DFS(Graph &G, int s, bool printC)
 //DFS topological sort
 void DFS2(Graph &G, int s, list<fs> &F, int* label)
 {
-	//we are given vertex s that we will mark as explored
-	//markVertex(G, s); //we're marking the vertex as explored
 	//loop through each edge and check (s,v)
 	list<Edge>::iterator i;
 	int v;
